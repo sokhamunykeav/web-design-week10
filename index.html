@@ -1,9 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monster Slayer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start code (vanilla html)</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
@@ -11,7 +22,43 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    
+    <section class="container">
+      <h2>Monster Health</h2>
+      <div class="healthbar">
+        <div style="width: 90%" class="healthbar__value"></div>
+      </div>
+    </section>
+    <section class="container">
+      <h2>Your Health</h2>
+      <div class="healthbar">
+        <div style="width: 50%" class="healthbar__value"></div>
+      </div>
+    </section>
+    <section class="container">
+      <h2>Game Over!</h2>
+      <h3>You lost!</h3>
+      <h3>You won!</h3>
+      <button>Start New Game</button>
+    </section>
+    <section id="controls">
+      <button>ATTACK</button>
+      <button>SPECIAL !</button>
+      <button>HEAL</button>
+      <button>KILL YOURSELF</button>
+    </section>
+    <section id="log" class="container">
+      <h2>Battle Log</h2>
+      <ul>
+        <li>
+          <span>Player</span>
+          <span> heals for <span class="log--heal">12</span></span>
+        </li>
+        <li>
+          <span>Monster</span>
+          <span> attaked for <span class="log--damage">45</span></span>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
